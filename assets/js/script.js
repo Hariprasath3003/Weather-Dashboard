@@ -73,12 +73,39 @@ function updateWeatherUI(currentWeather, forecast) {
     });
 }
 
+// Function to create a new search result card
+function createSearchResultCard(cityName) {
+    const card = document.createElement('section');
+    card.classList.add('card', 'bg-light', 'mb-3', 'mx-5');
+
+    // Add event listener to trigger new search when clicked
+    card.addEventListener('click', function() {
+        fetchWeather(cityName);
+    });
+
+    // Change cursor style on hover
+    card.style.cursor = 'pointer';
+
+    const heading = document.createElement('h4');
+    heading.classList.add('card-header', 'text-dark');
+    heading.textContent = cityName;
+
+    card.appendChild(heading);
+
+    return card;
+}
+
 // Function to handle form submission
 function handleFormSubmit(event) {
     event.preventDefault(); // Prevent form submission
 
     const cityInput = document.getElementById('city-input').value;
     fetchWeather(cityInput);
+
+    // Create a new search result card and append it to the HTML
+    const searchResultCard = createSearchResultCard(cityInput);
+    const citySearchSidebar = document.querySelector('.city-search-sidebar');
+    citySearchSidebar.appendChild(searchResultCard);
 }
 
 // Add event listener to the search form
