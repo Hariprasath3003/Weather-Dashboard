@@ -46,6 +46,10 @@ main section {
     width: 67%;
 }
 
+.forecast-title {
+    text-align: center;
+}
+
 /* RESPONSIVE */
 
 @media (max-width: 768px) {
