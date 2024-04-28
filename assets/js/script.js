@@ -56,7 +56,7 @@ function updateWeatherUI(currentWeather, forecast) {
         forecastCard.classList.add('card', 'text-bg-success', 'm-2');
 
         const dateHeader = document.createElement('h5');
-        dateHeader.classList.add('card-header');
+        dateHeader.classList.add('card-header', 'fw-bold', 'text-warning');
         dateHeader.textContent = day.date.toDateString();
 
         const body = document.createElement('div');
