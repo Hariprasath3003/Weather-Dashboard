@@ -1,7 +1,7 @@
 :root {
-    /* Weather Dashboard Theme */
-    --main-color: url('/mnt/data/A_modern_weather_dashboard_background_with_a_clear.png'); 
-    --secondary-color: #3b3b3b; 
+    /* Default - Clear Sky */
+    --main-color: #87CEEB; /* Sky Blue */
+    --secondary-color: #3b3b3b; /* Dark Gray for contrast */
 
     /* Weather-Specific Themes */
     --sunny: #FFD700; /* Gold */
