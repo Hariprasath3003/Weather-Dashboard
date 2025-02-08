@@ -14,8 +14,9 @@ A modern and responsive **Weather Dashboard** that displays real-time weather da
 - **OpenWeather API** (Weather data)
 - **Bootstrap** (UI styling)
 
-## 📸 Screenshots
-![Weather Dashboard Preview](https://via.placeholder.com/800x400.png?text=Weather+Dashboard+Preview)
+## 📸 Screenshots 
+[![Weather Dashboard](screencapture-weather-dashboard.png)](https://weather-dashboard-ecru-chi.vercel.app/)
+
 
 ## 🏗️ Installation
 1. **Clone the repository**  
